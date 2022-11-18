@@ -32,7 +32,6 @@ export default {
 
   computed: {
     ...mapState('about', [
-      'image',
       'name',
       'blog',
       'phone'

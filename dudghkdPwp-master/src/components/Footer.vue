@@ -4,7 +4,7 @@
     <a 
       href="https://naver.com"
       target="_blank">
-      (c){{ new Date().getFullYear() }} amberjack
+      (c){{ new Date().getFullYear() }} {{ name }}
     </a>
   </footer>
 </template>
@@ -15,7 +15,6 @@ import Logo from '~/components/Logo'
 export default {
   components: {
     Logo
-  
   }
 }
 </script>

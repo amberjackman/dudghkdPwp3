@@ -22,7 +22,7 @@
 import Loader from '~/components/Loader'
 
 export default {
-  conponents: {
+  components: {
     Loader
   },
   props: {
