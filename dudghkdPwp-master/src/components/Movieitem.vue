@@ -42,25 +42,22 @@ export default {
   methods: {
     async init() {
       const poster = this.movie.Poster
-      if (!poster || poster === 'N/A'){
+      if (!poster || poster === 'N/A') {
         this.imageLoading = false
       } else {
-     await this.$loadImage(poster)
-     this.imageLoading = false
-     }
+        await this.$loadImage(poster)
+        this.imageLoading = false
+      }
     }
   }
 }
 </script>
 
-
 <style lang="scss" scoped>
-
-
 .movie {
   $width: 200px;
   width: $width;
-  height: $width * 3 / 2;
+  height: $width * 3/2;
   margin: 10px;
   border-radius: 4px;
   background-color: $gray-400;
@@ -76,21 +73,21 @@ export default {
     right: 0;
     border: 6px solid $primary;
   }
-  
   .info {
     background-color: rgba($black, .3);
+    backdrop-filter: blur(10px);
     width: 100%;
     padding: 14px;
     font-size: 14px;
     text-align: center;
+    box-sizing: border-box;
     position: absolute;
     left: 0;
     bottom: 0;
-    backdrop-filter: blur(10px);
-    .year{
+    .year {
       color: $primary;
     }
-    .title{
+    .title {
       color: $white;
       white-space: nowrap;
       overflow: hidden;
